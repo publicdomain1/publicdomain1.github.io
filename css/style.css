@@ -31,6 +31,7 @@ body .body {
 	background-color: rgba(0, 46, 82, 0.15);
 	padding: 20px;
 }
+
 .page {
   overflow: hidden;
   background-color: #fff;
@@ -959,6 +960,14 @@ p.subtitle {
 
 
 /* ===== Begin extra-space ===== */
+.extra-space-xs {
+	width: 100%;
+	height: 5px;
+}
+.extra-space-s {
+	width: 100%;
+	height: 10px;
+}
 .extra-space-m {
 	width: 100%;
 	height: 20px;
@@ -1186,4 +1195,58 @@ p.subtitle {
 .btn-1a:active {
 	color: white;
 	background: lightsalmon;
+}
+
+
+
+/*====== imgage zooming upon hoover ======*/
+.zoomimg {
+	display: inline-block;
+	width: 250px;
+	height: 375px;
+	padding: 0px 5px 0px 5px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all .5s ease;
+	position: relative;
+}
+.rcorners1 {
+	border-radius: 5px;
+}
+.zoomimg:hover {
+	cursor: pointer;
+	background-size: 150% 150%;
+}
+.lodge1 {
+	background-image: url('https://images.unsplash.com/photo-1446144525544-808f420174ec?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=782bb3344703fc9d3bde555c44c12923');
+	width: 355px; height: 310px;
+}
+.lodge2 {
+	background-image: url('https://images.unsplash.com/photo-1446407113233-1ea5e2bb0752?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=49eabcfae9c6b36c124098a11cb7f274');
+	width: 355px; height: 310px;
+}
+.lodge3 {
+	background-image: url('https://images.unsplash.com/photo-1417026792760-4002c893cfa0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=145c7f6de4022f43e6768d7787a7f07a');
+	width: 355px; height: 310px;
+}
+.zoomimgg:after {
+	position: absolute;
+	background-color: rgba(0,0,0,.35);
+	padding-top: 3px;
+	font-size: 2em;
+	color: #fff;
+	top:  0;
+	left: 0;
+	width: 350px;
+	height: 319px;
+	opacity: 0;
+	transition: opacity .5s linear;
+	box-sizing: border-box;
+}
+.zoomimg:hover:before{
+
+}
+.zoomimg:hover:after {
+	opacity: 10;
 }
