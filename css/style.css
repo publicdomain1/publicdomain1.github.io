@@ -134,6 +134,18 @@ section {
 .text-dark { color: #000; }
 
 
+/* trial navbar */
+.navbar-1 {
+	position: fixed;
+	width: auto;
+	height: 67px;
+	opacity: 0;
+}
+
+
+
+
+
 /* ===== Begin navbar ===== */
 .navbar {
 	margin: 0;
@@ -1199,6 +1211,8 @@ p.subtitle {
 
 
 
+
+
 /*====== imgage zooming upon hoover ======*/
 .zoomimg {
 	display: inline-block;
@@ -1212,7 +1226,7 @@ p.subtitle {
 	position: relative;
 }
 .rcorners1 {
-	border-radius: 5px;
+	border-radius: 25px;
 }
 .zoomimg:hover {
 	cursor: pointer;

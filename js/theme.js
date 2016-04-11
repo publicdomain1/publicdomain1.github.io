@@ -194,3 +194,10 @@ $(document).on('click','.navbar-collapse.in',function(e) {
         $(this).collapse('hide');
     }
 });
+
+///////////////////////////////////////////////////////////////////
+//tryin to make the navbar invisible until scroll
+///////////////////////////////////////////////////////////////////
+$(document).on('scroll', function (e) {
+    $('.navbar-1').css('opacity', ($(document).scrollTop() / 500));
+});
